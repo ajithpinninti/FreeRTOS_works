@@ -3231,3 +3231,11 @@
 2023-02-16 11:19:48,385 [INFO] CADModel:113 - Register for checkConnection events
 2023-02-16 11:19:48,448 [INFO] OpenFileManager:327 - Restore cursor
 2023-02-16 11:24:42,073 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=true
+2023-02-16 12:09:06,366 [INFO] JxBrowserEngine:114 - Initiate JxBrowser Engine with user profile folder
+2023-02-16 12:09:09,975 [INFO] WebAppUi:459 - Close the Jxbrowser engine manually
+2023-02-16 12:09:10,007 [INFO] WebAppUi:462 - Profiles folder deleted
+2023-02-16 12:09:10,805 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2023-02-16 12:09:28,510 [INFO] Activator:179 - 
+
+
+2023-02-16 12:09:28,510 [INFO] Activator:180 - !SESSION log4j initialized

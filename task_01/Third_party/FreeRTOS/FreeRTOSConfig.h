@@ -45,7 +45,7 @@
   extern uint32_t SystemCoreClock;
 #endif
 
-#define configUSE_PREEMPTION					0
+#define configUSE_PREEMPTION					1
 #define configSUPPORT_STATIC_ALLOCATION			0
 #define configSUPPORT_DYNAMIC_ALLOCATION		1
 #define configUSE_IDLE_HOOK						0
@@ -54,7 +54,7 @@
 #define configTICK_RATE_HZ						( ( TickType_t ) 1000 )
 #define configMAX_PRIORITIES					( 56 )
 #define configMINIMAL_STACK_SIZE				( ( uint16_t ) 512 )
-#define configTOTAL_HEAP_SIZE					( ( size_t ) 15 * 1024 )
+#define configTOTAL_HEAP_SIZE					( ( size_t ) 75 * 1024 )
 #define configMAX_TASK_NAME_LEN					( 16 )
 #define configUSE_TRACE_FACILITY				1
 #define configUSE_16_BIT_TICKS					0
@@ -91,6 +91,10 @@
 #define INCLUDE_xQueueGetMutexHolder			1
 #define INCLUDE_uxTaskGetStackHighWaterMark		1
 #define INCLUDE_eTaskGetState					1
+
+
+#define INCLUDE_xTaskGetIdleTaskHandle 1
+#define INCLUDE_pxTaskGetStackStart    1
 
 /* Cortex-M specific definitions. */
 #ifdef __NVIC_PRIO_BITS
@@ -139,4 +143,5 @@ See http://www.FreeRTOS.org/RTOS-Cortex-M3-M4.html. */
  * used. TEX=0, S=0, C=1, B=1. */
 #define configTEX_S_C_B_SRAM						( 0x03UL )
 
+#include "SEGGER_SYSVIEW_FreeRTOS.h"
 #endif /* FREERTOS_CONFIG_H */
