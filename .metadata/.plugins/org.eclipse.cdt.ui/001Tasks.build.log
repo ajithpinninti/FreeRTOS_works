@@ -1,0 +1,119 @@
+10:18:51 **** Incremental Build of configuration Debug for project 001Tasks ****
+make -j16 all 
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H7A3xxQ -c -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS/include" -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS" -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H7A3xxQ -c -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS/include" -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS" -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H7A3xxQ -c -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS/include" -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS" -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H7A3xxQ -c -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS/include" -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS" -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H7A3xxQ -c -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS/include" -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS" -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H7A3xxQ -c -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS/include" -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS" -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H7A3xxQ -c -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS/include" -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS" -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H7A3xxQ -c -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS/include" -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS" -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H7A3xxQ -c -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS/include" -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS" -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H7A3xxQ -c -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS/include" -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS" -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H7A3xxQ -c -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS/include" -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS" -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H7A3xxQ -c -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS/include" -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS" -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H7A3xxQ -c -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS/include" -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS" -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H7A3xxQ -c -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS/include" -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS" -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H7A3xxQ -c -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS/include" -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS" -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.o"
+In file included from ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c:51:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29:10: fatal error: stm32h7xx_hal_conf.h: No such file or directory
+arm-none-eabi-gcc "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H7A3xxQ -c -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS/include" -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS" -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/001Tasks/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.o"
+   29 | #include "stm32h7xx_hal_conf.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c:82:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29:10: fatal error: stm32h7xx_hal_conf.h: No such file or directory
+   29 | #include "stm32h7xx_hal_conf.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+In file included from ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c:120:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29:10: fatal error: stm32h7xx_hal_conf.h: No such file or directory
+   29 | #include "stm32h7xx_hal_conf.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+In file included from ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c:95:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29:10: fatal error: stm32h7xx_hal_conf.h: No such file or directory
+   29 | #include "stm32h7xx_hal_conf.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+compilation terminated.
+In file included from ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c:36:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29:10: fatal error: stm32h7xx_hal_conf.h: No such file or directory
+   29 | #include "stm32h7xx_hal_conf.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+compilation terminated.
+In file included from ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c:87:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29:10: fatal error: stm32h7xx_hal_conf.h: No such file or directory
+   29 | #include "stm32h7xx_hal_conf.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c:107:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29:10: fatal error: stm32h7xx_hal_conf.h: No such file or directory
+   29 | #include "stm32h7xx_hal_conf.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Drivers/STM32H7xx_HAL_Driver/Src/subdir.mk:76: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.o] Error 1
+make: *** Waiting for unfinished jobs....
+In file included from ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c:75:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29:10: fatal error: stm32h7xx_hal_conf.h: No such file or directory
+   29 | #include "stm32h7xx_hal_conf.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Drivers/STM32H7xx_HAL_Driver/Src/subdir.mk:76: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.o] Error 1
+make: *** [Drivers/STM32H7xx_HAL_Driver/Src/subdir.mk:76: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.o] Error 1
+make: *** [Drivers/STM32H7xx_HAL_Driver/Src/subdir.mk:76: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.o] Error 1
+make: *** [Drivers/STM32H7xx_HAL_Driver/Src/subdir.mk:76: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.o] Error 1
+make: *** [Drivers/STM32H7xx_HAL_Driver/Src/subdir.mk:76: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.o] Error 1
+make: *** [Drivers/STM32H7xx_HAL_Driver/Src/subdir.mk:76: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.o] Error 1
+In file included from ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c:323:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29:10: fatal error: stm32h7xx_hal_conf.h: No such file or directory
+   29 | #include "stm32h7xx_hal_conf.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Drivers/STM32H7xx_HAL_Driver/Src/subdir.mk:76: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.o] Error 1
+In file included from ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c:88:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29:10: fatal error: stm32h7xx_hal_conf.h: No such file or directory
+   29 | #include "stm32h7xx_hal_conf.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Drivers/STM32H7xx_HAL_Driver/Src/subdir.mk:76: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.o] Error 1
+In file included from ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c:51:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29:10: fatal error: stm32h7xx_hal_conf.h: No such file or directory
+   29 | #include "stm32h7xx_hal_conf.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Drivers/STM32H7xx_HAL_Driver/Src/subdir.mk:76: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.o] Error 1
+make: *** [Drivers/STM32H7xx_HAL_Driver/Src/subdir.mk:76: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.o] Error 1
+In file included from ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c:150:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29:10: fatal error: stm32h7xx_hal_conf.h: No such file or directory
+   29 | #include "stm32h7xx_hal_conf.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Drivers/STM32H7xx_HAL_Driver/Src/subdir.mk:76: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.o] Error 1
+In file included from ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c:146:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29:10: fatal error: stm32h7xx_hal_conf.h: No such file or directory
+   29 | #include "stm32h7xx_hal_conf.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c:153:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29:10: fatal error: stm32h7xx_hal_conf.h: No such file or directory
+   29 | #include "stm32h7xx_hal_conf.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Drivers/STM32H7xx_HAL_Driver/Src/subdir.mk:76: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.o] Error 1
+In file included from ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c:67:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29:10: fatal error: stm32h7xx_hal_conf.h: No such file or directory
+   29 | #include "stm32h7xx_hal_conf.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Drivers/STM32H7xx_HAL_Driver/Src/subdir.mk:76: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.o] Error 1
+make: *** [Drivers/STM32H7xx_HAL_Driver/Src/subdir.mk:76: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.o] Error 1
+In file included from ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c:23:
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29:10: fatal error: stm32h7xx_hal_conf.h: No such file or directory
+   29 | #include "stm32h7xx_hal_conf.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Drivers/STM32H7xx_HAL_Driver/Src/subdir.mk:76: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+
+10:18:52 Build Failed. 33 errors, 0 warnings. (took 736ms)
+
