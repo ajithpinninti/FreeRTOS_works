@@ -6,8 +6,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="malloc"/>
+			<item value="support_"/>
 			<item value="task"/>
+			<item value="malloc"/>
 		</list>
 		<list key="replacehistory">
 		</list>
