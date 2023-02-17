@@ -5864,3 +5864,32 @@ java.io.IOException: The process cannot access the file because another process 
 	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:200)
 	at org.eclipse.egit.ui.internal.staging.StagingView$58.run(StagingView.java:3872)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.egit.ui 4 0 2023-02-17 11:44:05.069
+!MESSAGE The process cannot access the file because another process has locked a portion of the file
+!STACK 0
+java.io.IOException: The process cannot access the file because another process has locked a portion of the file
+	at java.base/java.io.FileInputStream.read0(Native Method)
+	at java.base/java.io.FileInputStream.read(FileInputStream.java:231)
+	at org.eclipse.jgit.util.IO.readWholeStream(IO.java:169)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.possiblyFilteredInputStream(WorkingTreeIterator.java:413)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getEntryContentLength(WorkingTreeIterator.java:603)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:200)
+	at org.eclipse.egit.ui.internal.staging.StagingView$58.run(StagingView.java:3872)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.egit.ui 4 0 2023-02-17 11:44:13.094
+!MESSAGE The process cannot access the file because another process has locked a portion of the file
+!STACK 0
+java.io.IOException: The process cannot access the file because another process has locked a portion of the file
+	at java.base/java.io.FileInputStream.read0(Native Method)
+	at java.base/java.io.FileInputStream.read(FileInputStream.java:231)
+	at org.eclipse.jgit.util.IO.readWholeStream(IO.java:169)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.possiblyFilteredInputStream(WorkingTreeIterator.java:413)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getEntryContentLength(WorkingTreeIterator.java:603)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:200)
+	at org.eclipse.egit.ui.internal.staging.StagingView$58.run(StagingView.java:3872)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.security 1 0 2023-02-17 11:45:49.589
+!MESSAGE New keyring password generated. 
