@@ -107,6 +107,7 @@ int main(void)
   SEGGER_SYSVIEW_Conf();
 
   SEGGER_SYSVIEW_Start();
+ // Segger intialization is completed
 
   status = xTaskCreate(task1_handler, "Task-1", 200, "Hello world from Task-1", 2, &task1_handle);
 

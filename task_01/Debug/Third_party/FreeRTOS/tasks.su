@@ -1,6 +1,6 @@
 ../Third_party/FreeRTOS/tasks.c:733:16:xTaskCreate	56	static
 ../Third_party/FreeRTOS/tasks.c:828:13:prvInitialiseNewTask	40	static,ignoring_inline_asm
-../Third_party/FreeRTOS/tasks.c:1038:13:prvAddNewTaskToReadyList	40	static
+../Third_party/FreeRTOS/tasks.c:1038:13:prvAddNewTaskToReadyList	40	static,ignoring_inline_asm
 ../Third_party/FreeRTOS/tasks.c:1124:10:vTaskDelete	24	static,ignoring_inline_asm
 ../Third_party/FreeRTOS/tasks.c:1226:16:xTaskDelayUntil	48	static,ignoring_inline_asm
 ../Third_party/FreeRTOS/tasks.c:1313:10:vTaskDelay	24	static,ignoring_inline_asm
