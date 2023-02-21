@@ -13,18 +13,21 @@ Purpose : Terminal control for Flasher using USART1 on PA9/PA10
 #include "SEGGER_RTT.h"
 #include "stm32h7xx.h"
 
-#define OS_FSYS 168000000L   // MCU core frequency of Flasher ARM Pro V4
-#define RCC_BASE_ADDR       0x40023800
+#define OS_FSYS 280000000L   // MCU core frequency of Flasher ARM Pro V4
+#define RCC_BASE_ADDR       RCC
 
-#define OFF_AHB1ENR         0x30        // AHB1 peripheral clock enable register
-#define OFF_APB1ENR         0x40        // APB1 peripheral clock enable register
-#define OFF_APB2ENR         0x44        // APB2 peripheral clock enable register
+//#define OFF_AHB1ENR         0x30        // AHB1 peripheral clock enable register
+#define OFF_APB1LENR        0x148        // APB1 peripheral clock enable register
+//#define OFF_APB2ENR         0x44        // APB2 peripheral clock enable register
+#define OFF_AHB4ENR			0x140		//AHB1 peripheral clock enable register
 
-#define RCC_AHB1ENR         *(volatile uint32_t*)(RCC_BASE_ADDR + OFF_AHB1ENR)
-#define RCC_APB1ENR         *(volatile uint32_t*)(RCC_BASE_ADDR + OFF_APB1ENR)
-#define RCC_APB2ENR         *(volatile uint32_t*)(RCC_BASE_ADDR + OFF_APB2ENR)
+//#define RCC_AHB1ENR         *(volatile uint32_t*)(RCC_BASE_ADDR + OFF_AHB1ENR)
+#define RCC_APB1ENR         *(volatile uint32_t*)(RCC_BASE_ADDR + OFF_APB1LENR)
+//#define RCC_APB2ENR         *(volatile uint32_t*)(RCC_BASE_ADDR + OFF_APB2ENR)
+#define RCC_AHB4ENR 		*(volatile uint32_t*)(RCC_BASE_ADDR + OFF_AHB4ENR)
 
-#define GPIOA_BASE_ADDR     0x40020000
+//#define GPIOA_BASE_ADDR     0x40020000
+#define GPIOD_BASE_ADDR     GPIOD_BASE
 
 #define OFF_MODER           0x00        // GPIOx_MODER    (GPIO port mode register)
 #define OFF_OTYPER          0x04        // GPIOx_OTYPER   (GPIO port output type register)
@@ -37,30 +40,41 @@ Purpose : Terminal control for Flasher using USART1 on PA9/PA10
 #define OFF_AFRL            0x20        // GPIOx_AFRL     (GPIO alternate function low register)
 #define OFF_AFRH            0x24        // GPIOx_AFRH     (GPIO alternate function high register)
 
-#define USART1_BASE_ADDR    0x40011000
-#define USART2_BASE_ADDR    0x40004400
+//#define USART1_BASE_ADDR    0x40011000
+//#define USART2_BASE_ADDR    0x40004400
+#define USART3_BASE_ADDR    USART3_BASE
 
-#define OFF_SR              0x00        // Status register
-#define OFF_DR              0x04        // Data register
-#define OFF_BRR             0x08        // Baudrate register
-#define OFF_CR1             0x0C        // Control register 1
-#define OFF_CR2             0x10        // Control register 2
-#define OFF_CR3             0x14        // Control register 3
+#define OFF_SR              0x1C        // Status register
+//#define OFF_DR              0x04        // Data register
+#define OFF_RDR				0x24		// Receiver Data Register
+#define OFF_TDR				0x28		// Transmitter Data Register
+#define OFF_BRR             0x0C        // Baudrate register
+#define OFF_CR1             0x00        // Control register 1
+#define OFF_CR2             0x04        // Control register 2
+#define OFF_CR3             0x08        // Control register 3
 
 
-#define UART_BASECLK        OS_FSYS / 4       // USART2 runs on APB1 clock
-#define GPIO_BASE_ADDR      GPIOA_BASE_ADDR
-#define USART_BASE_ADDR     USART2_BASE_ADDR
-#define GPIO_UART_TX_BIT    2                // USART2 TX: Pin pa2
-#define GPIO_UART_RX_BIT    3                 // USART2 RX: Pin pa3
-#define USART_IRQn          USART2_IRQn
+#define UART_BASECLK        OS_FSYS / 2       // USART2 runs on APB1 clock
+#define GPIO_BASE_ADDR      GPIOD_BASE_ADDR
+#define USART_BASE_ADDR     USART3_BASE_ADDR
+//#define GPIO_UART_TX_BIT    8UL                // USART2 TX: Pin PD8
+//#define GPIO_UART_RX_BIT    9UL                 // USART2 RX: Pin PD9
+#define GPIO_UART_TX_BIT    0UL                // USART2 TX: Pin PD8
+#define GPIO_UART_RX_BIT    1UL                 // USART2 RX: Pin PD9
+
+#define GPIO_UART_TX_BITT    8UL                // USART2 TX: Pin PD8
+#define GPIO_UART_RX_BITT    9UL                 // USART2 RX: Pin PD9
+
+#define USART_IRQn          USART3_IRQn
 
 #define GPIO_MODER          *(volatile uint32_t*)(GPIO_BASE_ADDR + OFF_MODER)
 #define GPIO_AFRH           *(volatile uint32_t*)(GPIO_BASE_ADDR + OFF_AFRH)
 #define GPIO_AFRL           *(volatile uint32_t*)(GPIO_BASE_ADDR + OFF_AFRL)
 
 #define USART_SR            *(volatile uint32_t*)(USART_BASE_ADDR + OFF_SR)
-#define USART_DR            *(volatile uint32_t*)(USART_BASE_ADDR + OFF_DR)
+//#define USART_DR            *(volatile uint32_t*)(USART_BASE_ADDR + OFF_DR)
+#define USART_TDR            *(volatile uint32_t*)(USART_BASE_ADDR + OFF_TDR)
+#define USART_RDR            *(volatile uint32_t*)(USART_BASE_ADDR + OFF_RDR)
 #define USART_BRR           *(volatile uint32_t*)(USART_BASE_ADDR + OFF_BRR)
 #define USART_CR1           *(volatile uint32_t*)(USART_BASE_ADDR + OFF_CR1)
 #define USART_CR2           *(volatile uint32_t*)(USART_BASE_ADDR + OFF_CR2)
@@ -167,15 +181,15 @@ void HIF_UART_WaitForTxEnd(void) {
 *    (1) This is a high-prio interrupt so it may NOT use embOS functions
 *        However, this also means that embOS will never disable this interrupt
 */
-void USART2_IRQHandler(void);
-void USART2_IRQHandler(void) {
+void USART3_IRQHandler(void);
+void USART3_IRQHandler(void) {
   int UsartStatus;
   uint8_t v;
   int r;
 
   UsartStatus = USART_SR;                              // Examine status register
   if (UsartStatus & (1 << USART_RXNE)) {               // Data received?
-    v = USART_DR;                                      // Read data
+    v = USART_RDR;                                      // Read data
     if ((UsartStatus & USART_RX_ERROR_FLAGS) == 0) {   // Only process data if no error occurred
       (void)v;                                         // Avoid warning in BTL
       if (_cbOnRx) {
@@ -197,7 +211,7 @@ void USART2_IRQHandler(void) {
       USART_CR1 &= ~(1UL << USART_TXEIE);  // Disable further tx interrupts
     } else {
       USART_SR;      // Makes sure that "transmission complete" flag in USART_SR is reset to 0 as soon as we write USART_DR. If USART_SR is not read before, writing USART_DR does not clear "transmission complete". See STM32F4 USART documentation for more detailed description.
-      USART_DR = v;  // Start transmission by writing to data register
+      USART_TDR = v;  // Start transmission by writing to data register
     }
   }
 }
@@ -222,18 +236,19 @@ void HIF_UART_Init(uint32_t Baudrate, UART_ON_TX_FUNC_P cbOnTx, UART_ON_RX_FUNC_
   //
   // Configure USART RX/TX pins for alternate function AF7
   //
-  RCC_APB1ENR |= (1 <<  17);        // Enable USART2 clock
-  RCC_AHB1ENR |= (1 <<  0);        // Enable IO port A clock
-  v  = GPIO_AFRL;
-  v &= ~((15UL << ((GPIO_UART_TX_BIT) << 2)) | (15UL << ((GPIO_UART_RX_BIT) << 2)));
+  RCC_APB1ENR |= (1 <<  18);        // Enable USART3 clock
+  RCC_AHB4ENR |= (1 <<  3);        // Enable IO port D clock
+  v  = GPIO_AFRH;
+  v &=  ~((15UL << ((GPIO_UART_TX_BIT) << 2)) | (15UL << ((GPIO_UART_RX_BIT) << 2)));
   v |=   ((7UL << ((GPIO_UART_TX_BIT) << 2)) | (7UL << ((GPIO_UART_RX_BIT) << 2)));
-  GPIO_AFRL = v;
+  GPIO_AFRH = v;
   //
   // Configure USART RX/TX pins for alternate function usage
   //
   v  = GPIO_MODER;
-  v &= ~((3UL << (GPIO_UART_TX_BIT << 1)) | (3UL << (GPIO_UART_RX_BIT << 1)));
-  v |=  ((2UL << (GPIO_UART_TX_BIT << 1)) | (2UL << (GPIO_UART_RX_BIT << 1)));         // PA10: alternate function
+
+  v &= ~((3UL << (GPIO_UART_TX_BITT << 1)) | (3UL << (GPIO_UART_RX_BITT << 1)));
+  v |=  ((2UL << (GPIO_UART_TX_BITT << 1)) | (2UL << (GPIO_UART_RX_BITT << 1)));         // PA10: alternate function
   GPIO_MODER = v;
   //
   // Initialize USART
@@ -252,7 +267,7 @@ void HIF_UART_Init(uint32_t Baudrate, UART_ON_TX_FUNC_P cbOnTx, UART_ON_RX_FUNC_
             ;
   USART_CR3 = 0
             | (0 << 11)                         // ONEBIT = 0; Three sample bit method
-            | (1 <<  7)                         // DMAT   = 1; DMA for transmitter enabled
+            | (1 <<  7)                     // DMAT   = 1; DMA for transmitter enabled
             ;
   //
   // Set baudrate

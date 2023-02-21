@@ -4380,3 +4380,66 @@
 2023-02-20 13:38:20,223 [INFO] CADModel:164 - CPN selected for project levelSTM32H7A3ZIT6Q
 2023-02-20 13:38:20,223 [INFO] CADModel:113 - Register for checkConnection events
 2023-02-20 13:38:20,308 [INFO] OpenFileManager:327 - Restore cursor
+2023-02-20 14:07:14,022 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 530140912 Bytes (768606208)
+2023-02-20 14:07:44,340 [INFO] Gpio:272 - dependency for GPIO [RCC, USART3, USB_OTG_HS]
+2023-02-20 14:07:57,578 [INFO] Gpio:272 - dependency for GPIO [RCC, USART3, USB_OTG_HS]
+2023-02-20 14:08:04,308 [INFO] NvicIntPanel:100 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,544x360,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-02-20 14:13:25,710 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 493928128 Bytes (768606208)
+2023-02-20 14:13:26,946 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 542688960 Bytes (768606208)
+2023-02-20 14:13:27,621 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 354071328 Bytes (768606208)
+2023-02-20 14:13:28,159 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USB_OTG_HS
+2023-02-20 14:13:28,159 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-02-20 14:13:28,160 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-02-20 14:13:28,160 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-02-20 14:13:28,160 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-02-20 14:13:28,161 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-02-20 14:13:28,165 [INFO] CodeGenerator:692 - code generatio: config db path: C:\ST\STM32CubeIDE_1.11.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\
+2023-02-20 14:13:28,477 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Users\ajitp\OneDrive\Documents\Embedded_systems_courses\FREERTOS_COURSE\WORKSPACE\task_01\MXTmpFiles\license.tmp_save
+2023-02-20 14:13:28,793 [INFO] CodeEngine:271 - Generated code: C:\Users\ajitp\OneDrive\Documents\Embedded_systems_courses\FREERTOS_COURSE\WORKSPACE\task_01\MXTmpFiles\license.tmp
+2023-02-20 14:13:28,889 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Users\ajitp\OneDrive\Documents\Embedded_systems_courses\FREERTOS_COURSE\WORKSPACE\task_01\MXTmpFiles\gpio.tmp_save
+2023-02-20 14:13:29,013 [INFO] CodeEngine:271 - Generated code: C:\Users\ajitp\OneDrive\Documents\Embedded_systems_courses\FREERTOS_COURSE\WORKSPACE\task_01\MXTmpFiles\gpio.tmp
+2023-02-20 14:13:29,294 [WARN] IPConfigManager:98 - WARNING: Missing Config File for USB ip!!
+2023-02-20 14:13:29,340 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Users\ajitp\OneDrive\Documents\Embedded_systems_courses\FREERTOS_COURSE\WORKSPACE\task_01\MXTmpFiles\cortex.tmp_save
+2023-02-20 14:13:29,428 [INFO] CodeEngine:271 - Generated code: C:\Users\ajitp\OneDrive\Documents\Embedded_systems_courses\FREERTOS_COURSE\WORKSPACE\task_01\MXTmpFiles\cortex.tmp
+2023-02-20 14:13:29,443 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Users\ajitp\OneDrive\Documents\Embedded_systems_courses\FREERTOS_COURSE\WORKSPACE\task_01\Core\Src\stm32h7xx_it.c_save
+2023-02-20 14:13:29,573 [INFO] CodeEngine:271 - Generated code: C:\Users\ajitp\OneDrive\Documents\Embedded_systems_courses\FREERTOS_COURSE\WORKSPACE\task_01\Core\Src\stm32h7xx_it.c
+2023-02-20 14:13:29,580 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Users\ajitp\OneDrive\Documents\Embedded_systems_courses\FREERTOS_COURSE\WORKSPACE\task_01\Core\Inc\stm32h7xx_it.h_save
+2023-02-20 14:13:29,655 [INFO] CodeEngine:271 - Generated code: C:\Users\ajitp\OneDrive\Documents\Embedded_systems_courses\FREERTOS_COURSE\WORKSPACE\task_01\Core\Inc\stm32h7xx_it.h
+2023-02-20 14:13:29,747 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Users\ajitp\OneDrive\Documents\Embedded_systems_courses\FREERTOS_COURSE\WORKSPACE\task_01\Core\Src\stm32h7xx_hal_msp.c_save
+2023-02-20 14:13:29,840 [INFO] CodeEngine:271 - Generated code: C:\Users\ajitp\OneDrive\Documents\Embedded_systems_courses\FREERTOS_COURSE\WORKSPACE\task_01\Core\Src\stm32h7xx_hal_msp.c
+2023-02-20 14:13:29,846 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Users\ajitp\OneDrive\Documents\Embedded_systems_courses\FREERTOS_COURSE\WORKSPACE\task_01\MXTmpFiles\system.tmp_save
+2023-02-20 14:13:29,886 [INFO] CodeEngine:271 - Generated code: C:\Users\ajitp\OneDrive\Documents\Embedded_systems_courses\FREERTOS_COURSE\WORKSPACE\task_01\MXTmpFiles\system.tmp
+2023-02-20 14:13:29,891 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Users\ajitp\OneDrive\Documents\Embedded_systems_courses\FREERTOS_COURSE\WORKSPACE\task_01\Core\Src\stm32h7xx_hal_timebase_tim.c_save
+2023-02-20 14:13:29,940 [INFO] CodeEngine:271 - Generated code: C:\Users\ajitp\OneDrive\Documents\Embedded_systems_courses\FREERTOS_COURSE\WORKSPACE\task_01\Core\Src\stm32h7xx_hal_timebase_tim.c
+2023-02-20 14:13:29,951 [INFO] CodeEngine:303 - oldGeneratedFile, C:\Users\ajitp\OneDrive\Documents\Embedded_systems_courses\FREERTOS_COURSE\WORKSPACE\task_01\Core\Inc\stm32h7xx_hal_conf.h_save
+2023-02-20 14:13:30,012 [INFO] CodeEngine:327 - Generated code: C:\Users\ajitp\OneDrive\Documents\Embedded_systems_courses\FREERTOS_COURSE\WORKSPACE\task_01\Core\Inc\stm32h7xx_hal_conf.h
+2023-02-20 14:13:30,057 [WARN] IPConfigManager:3414 - IP not found : USB_OTG
+2023-02-20 14:13:30,059 [WARN] CodeGenerator:3583 - IP not found : null
+2023-02-20 14:13:30,065 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Users\ajitp\OneDrive\Documents\Embedded_systems_courses\FREERTOS_COURSE\WORKSPACE\task_01\Core\Inc\main.h_save
+2023-02-20 14:13:30,123 [INFO] CodeEngine:271 - Generated code: C:\Users\ajitp\OneDrive\Documents\Embedded_systems_courses\FREERTOS_COURSE\WORKSPACE\task_01\Core\Inc\main.h
+2023-02-20 14:13:30,130 [INFO] CodeEngine:247 - oldGeneratedFile, C:\Users\ajitp\OneDrive\Documents\Embedded_systems_courses\FREERTOS_COURSE\WORKSPACE\task_01\Core\Src\main.c_save
+2023-02-20 14:13:30,236 [INFO] CodeEngine:271 - Generated code: C:\Users\ajitp\OneDrive\Documents\Embedded_systems_courses\FREERTOS_COURSE\WORKSPACE\task_01\Core\Src\main.c
+2023-02-20 14:13:30,771 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 184mS.
+2023-02-20 14:13:30,779 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-02-20 14:13:30,998 [INFO] ConfigFileManager:1396 - The Die is : DIE480
+2023-02-20 14:13:31,012 [INFO] ApiDbMcu:505 - Load IP Config File for FATFS
+2023-02-20 14:13:31,019 [INFO] ApiDbMcu:505 - Load IP Config File for FREERTOS
+2023-02-20 14:13:31,023 [INFO] ApiDbMcu:505 - Load IP Config File for LIBJPEG
+2023-02-20 14:13:31,029 [INFO] ApiDbMcu:505 - Load IP Config File for MBEDTLS
+2023-02-20 14:13:31,039 [INFO] ApiDbMcu:505 - Load IP Config File for USB_DEVICE
+2023-02-20 14:13:31,045 [INFO] ApiDbMcu:505 - Load IP Config File for USB_HOST
+2023-02-20 14:13:32,380 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 1598mS.
+2023-02-20 14:13:32,383 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 2mS.
+2023-02-20 14:13:32,388 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-02-20 19:28:01,586 [INFO] JxBrowserEngine:114 - Initiate JxBrowser Engine with user profile folder
+2023-02-20 19:28:05,273 [INFO] WebAppUi:459 - Close the Jxbrowser engine manually
+2023-02-20 19:28:05,320 [INFO] WebAppUi:462 - Profiles folder deleted
+2023-02-20 19:28:06,306 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2023-02-20 22:21:25,912 [INFO] Activator:179 - 
+
+
+2023-02-20 22:21:25,917 [INFO] Activator:180 - !SESSION log4j initialized
+2023-02-21 09:25:57,657 [INFO] Activator:179 - 
+
+
+2023-02-21 09:25:57,672 [INFO] Activator:180 - !SESSION log4j initialized
