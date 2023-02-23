@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="RCC_APB2ENR"/>
+		<item key="selection" value="USART_TDR"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="USART_TDR"/>
+			<item value="_cbOnUARTTx"/>
+			<item value="HIF_UART_WaitForTxEnd"/>
+			<item value="OFF_DR"/>
+			<item value="HIF_UART_EnableTXEInterrupt"/>
+			<item value="SEGGER_SYSVIEW_Start"/>
 			<item value="RCC_APB2ENR"/>
 			<item value="GPIO_UART_TX_BIT"/>
-			<item value="GPIO_AFRH"/>
-			<item value="GPIO_AFRL"/>
-			<item value="OFF_AFRH"/>
-			<item value="_cbOnTx"/>
-			<item value="_cbOnRx"/>
-			<item value="USART_TC"/>
 		</list>
 		<list key="replacehistory">
 			<item value="USART3_BASE_ADDR"/>

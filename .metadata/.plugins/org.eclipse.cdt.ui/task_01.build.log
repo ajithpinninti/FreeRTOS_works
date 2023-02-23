@@ -1,17 +1,10 @@
-19:09:28 **** Incremental Build of configuration Debug for project task_01 ****
+10:35:21 **** Incremental Build of configuration Debug for project task_01 ****
 make -j16 all 
-arm-none-eabi-gcc "../Third_party/SEGGER/Rec/segger_uart.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H7A3xxQ -c -I../Core/Inc -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/task_01/Third_party/SEGGER/Config" -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/task_01/Third_party/SEGGER/OS" -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/task_01/Third_party/SEGGER/SEGGER" -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/task_01/Third_party/FreeRTOS" -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/task_01/Third_party/FreeRTOS/include" -I"C:/Users/ajitp/OneDrive/Documents/Embedded_systems_courses/FREERTOS_COURSE/WORKSPACE/task_01/Third_party/FreeRTOS/portable/GCC/ARM_CM4F" -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Third_party/SEGGER/Rec/segger_uart.d" -MT"Third_party/SEGGER/Rec/segger_uart.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Third_party/SEGGER/Rec/segger_uart.o"
-arm-none-eabi-gcc -o "task_01.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\ajitp\OneDrive\Documents\Embedded_systems_courses\FREERTOS_COURSE\WORKSPACE\task_01\STM32H7A3ZITXQ_FLASH.ld" --specs=nosys.specs -Wl,-Map="task_01.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: task_01.elf
- 
 arm-none-eabi-size   task_01.elf 
-arm-none-eabi-objdump -h -S  task_01.elf  > "task_01.list"
    text	   data	    bss	    dec	    hex	filename
-  46324	    140	  85812	 132276	  204b4	task_01.elf
+  31164	    132	  85660	 116956	  1c8dc	task_01.elf
 Finished building: default.size.stdout
  
-Finished building: task_01.list
- 
 
-19:09:29 Build Finished. 0 errors, 0 warnings. (took 1s.69ms)
+10:35:21 Build Finished. 0 errors, 0 warnings. (took 582ms)
 
