@@ -138,6 +138,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+
   }
   /* USER CODE END 3 */
 }
@@ -293,11 +294,16 @@ static void MX_GPIO_Init(void)
 /* USER CODE BEGIN 4 */
 
 static void led1_handler(void * parameters){
+	 TickType_t xLastWakeTime;
+	 xLastWakeTime = xTaskGetTickCount();
 
 	while(1){
+	// Wait for the next cycle.
+
 	HAL_GPIO_TogglePin(LD1_GPIO_Port, LD1_Pin);
 	SEGGER_SYSVIEW_PrintfTarget("Toggling green LED1");
-	vTaskDelay(pdMS_TO_TICKS(1000));
+	 vTaskDelayUntil( &xLastWakeTime, pdMS_TO_TICKS(1) );
+
 //	HAL_Delay(1000);
 
 	}
@@ -305,22 +311,29 @@ static void led1_handler(void * parameters){
 
 static void led2_handler(void * parameters){
 
+	TickType_t xLastWakeTime;
+
+	xLastWakeTime = xTaskGetTickCount();
 	while(1){
+
 	HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
 	SEGGER_SYSVIEW_PrintfTarget("Toggling LED 2");
-	vTaskDelay(pdMS_TO_TICKS(800));
-//	HAL_Delay(800);
+	 vTaskDelayUntil( &xLastWakeTime, pdMS_TO_TICKS(4)  );
 	}
 
 }
 
 static void led3_handler(void * parameters){
+	TickType_t xLastWakeTime;
+
+	xLastWakeTime = xTaskGetTickCount();
 
 	while(1){
+
 	HAL_GPIO_TogglePin(LD3_GPIO_Port, LD3_Pin);
 	SEGGER_SYSVIEW_PrintfTarget("Toggling LED 3");
-	vTaskDelay(pdMS_TO_TICKS(400));
-//	HAL_Delay(400);
+	vTaskDelayUntil( &xLastWakeTime,1 );
+
 	}
 
 }
