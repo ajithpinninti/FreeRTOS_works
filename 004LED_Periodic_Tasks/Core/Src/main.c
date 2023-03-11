@@ -32,6 +32,8 @@
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
 
+#define pdMS_TO_TICKS(x) p(x)
+
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
