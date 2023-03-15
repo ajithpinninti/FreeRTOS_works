@@ -144,4 +144,10 @@ See http://www.FreeRTOS.org/RTOS-Cortex-M3-M4.html. */
 #define configTEX_S_C_B_SRAM						( 0x03UL )
 
 //#include "SEGGER_SYSVIEW_FreeRTOS.h"
+
+
+/* Define pdmstoticks if it is not defined */
+#ifndef pdMS_TO_TICKS
+	#define pdMS_TO_TICKS( xTimeInMs )    ( ( TickType_t ) ( ( ( TickType_t ) ( xTimeInMs ) * ( TickType_t ) configTICK_RATE_HZ ) / ( TickType_t ) 1000U ) )
+#endif
 #endif /* FREERTOS_CONFIG_H */
